@@ -8,7 +8,7 @@ ENV LC_ALL en_US.UTF-8
 RUN locale-gen en_US.UTF-8
 
 # Python/pip
-RUN apt-get install -y build-essential python-dev python-pip
+RUN apt-get install -y build-essential python-dev python-pip python-imaging
 
 # PostgreSQL client libraries
 RUN ln -s -f /bin/true /usr/bin/chfn
